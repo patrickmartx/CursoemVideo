@@ -8,12 +8,12 @@ def verificarAlistamento(anoNasc):
     idade = anoAtual - anoNasc
     if idade < 18:
         tempoRestante = 18 - idade
-        return print(f"Você ainda irá se alistar ao serviço militar. Falta(m) {tempoRestante} ano(s).")
+        return print(f"Você ainda irá se alistar ao serviço militar. Falta(m) {tempoRestante} ano(s). Seu alistamento será em {anoAtual + tempoRestante}")
     elif idade == 18:
         return print("Já está na hora de se alistar!")
     else:
         tempoSuperado = idade - 18
-        return print(f"Já passou o tempo do alistamento à {tempoSuperado} ano(s).")
+        return print(f"Já passou o tempo do alistamento à {tempoSuperado} ano(s). Seu ano de alistamento foi {anoAtual - tempoSuperado}.")
 
 
 anoNascimento = int(input("Em que ano você nasceu?\n> "))
