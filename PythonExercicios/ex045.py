@@ -61,8 +61,13 @@ opcoes = ['Pedra', 'Papel', 'Tesoura']
 print(f"Dadas as opções: 1 - {opcoes[0]}. 2 - {opcoes[1]} e 3 - {opcoes[2]}.\nEscolha a sua:")
 escolhaUsuario = tratarEscolha()
 escolhaComputador = randint(0,2)
-print(f"Muito bem, agora o computador irá escolher.\n")
-time.sleep(2)
+time.sleep(1)
+print(f"{cores['magenta']}JO{cores['limpa']}")
+time.sleep(1)
+print(f"{cores['magenta']}KEN{cores['limpa']}")
+time.sleep(1)
+print(f"{cores['magenta']}PÔ{cores['limpa']}")
+time.sleep(0.5)
 vencedor = escolherVencedor(escolhaUsuario, escolhaComputador)
 
 
