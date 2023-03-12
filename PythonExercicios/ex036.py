@@ -23,8 +23,6 @@ elif (horaAtual >= 18) and (horaAtual < 24):
 print("Para que seu emprestimo seja aprovado, precisaremos de algumas informações:")
 valorCasa = float(input("Qual é o valor da casa?\n> "))
 salarioComprador = float(input("Qual o seu salário?\n> "))
-# parcela = str(input("Vai parcelar?(Responda com S ou N)\n> ")).strip().upper()
-# parcela = parcelas(parcela)
 ano = int(input("Em quantos anos será pago a casa?\n> "))
 parcela = ano * 12
 validacao = validarEmprestimo(valorCasa, salarioComprador, parcela)
