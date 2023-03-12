@@ -24,6 +24,6 @@ def processaValor(vProd, fPag):
         print(f"\nPagando 3x ou mais no cartão, você paga um juros de 20%.\nO Produto custara R${(vProd + juros):.2f}")
 
 
-valorProduto = 100
+valorProduto = float(input("Digite o valor do produto: "))
 formaPagamento = interface()
 valor = processaValor(valorProduto, formaPagamento)
