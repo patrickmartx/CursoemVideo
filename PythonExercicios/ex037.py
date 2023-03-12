@@ -14,7 +14,7 @@ def conversao(nInt, op):
     if op == 1:
         return print(format(nInt, 'b'))
     elif op == 2:
-        return print(format(nInt, 'o'))
+        return print(oct(nInt)[2:])
     elif op == 3:
         return print(format(nInt, 'x'))
 
