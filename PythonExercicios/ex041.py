@@ -11,7 +11,7 @@ def verificarCategoria(anoNasc):
         return print("infantil.")
     elif idade > 14 and idade <= 19:
         return print("junior.")
-    elif idade > 19 and idade <= 20:
+    elif idade > 19 and idade <= 25:
         return print("senior.")
     else:
         return print("master.")
