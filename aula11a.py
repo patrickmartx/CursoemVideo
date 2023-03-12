@@ -29,11 +29,6 @@
   22 fundo ciano = '\033[46m'
   23 fundo branco = '\033[47m'
 '''
-
-print("\033[0:30:41mTeste\033[m de projeto")
-print("\033[1:32mVerdadeiro\033[m ou \033[1:31mFalso\033[m")
-nome = "Patrick"
-print("Prazer em te conhecer, {}{}{}.".format('\033[1:34m', nome, '\033[m'))
 cores = {'limpa':'\033[m',
          'vermelho': '\033[31m',
          'amarelo':'\033[33m',
@@ -44,4 +39,9 @@ cores = {'limpa':'\033[m',
 
          'pretoebranco': '\033[7:30m'
          }
+
+print("\033[0:30:41mTeste\033[m de projeto")
+print("\033[1:32mVerdadeiro\033[m ou \033[1:31mFalso\033[m")
+nome = "Patrick"
+print("Prazer em te conhecer, {}{}{}.".format('\033[1:34m', nome, '\033[m'))
 print(f"Me mude de {cores['amarelo']}COR{cores['limpa']}")
