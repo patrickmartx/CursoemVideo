@@ -13,12 +13,12 @@ if retaA < retaB + retaC and retaB < retaA + retaC and retaC < retaA + retaB:
         print("É um triângulo Isósceles.")
     elif ((retaA != retaB) and (retaA != retaC)) or ((retaB != retaC) and (retaB != retaA)) or ((retaC != retaA) and retaC != retaB):
         print("É um triângulo Escaleno.")'''
+    if retaA == retaB == retaC:
+        print("É um triângulo equilátero.")
+    elif retaA != retaB != retaC != retaA:
+        print("É um triângulo Escaleno.")
+    else:
+        print("É um triângulo Isósceles.")
 else:
     print("Não é possível formar um triângulo.")
 
-if retaA == retaB == retaC:
-    print("É um triângulo equilátero.")
-elif retaA != retaB != retaC != retaA:
-    print("É um triângulo Escaleno.")
-else:
-    print("É um triângulo Isósceles.")
