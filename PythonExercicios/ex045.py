@@ -57,18 +57,25 @@ cores = {'limpa':'\033[m',
          }
 
 print(f"{cores['magenta']}##### JOKENPÔ #####{cores['limpa']}")
-opcoes = ['Pedra', 'Papel', 'Tesoura']
-print(f"Dadas as opções: 1 - {opcoes[0]}. 2 - {opcoes[1]} e 3 - {opcoes[2]}.\nEscolha a sua:")
-escolhaUsuario = tratarEscolha()
-escolhaComputador = randint(0,2)
-time.sleep(1)
-print(f"{cores['magenta']}JO{cores['limpa']}")
-time.sleep(1)
-print(f"{cores['magenta']}KEN{cores['limpa']}")
-time.sleep(1)
-print(f"{cores['magenta']}PÔ{cores['limpa']}")
-time.sleep(0.5)
-vencedor = escolherVencedor(escolhaUsuario, escolhaComputador)
+inicio = 1
+while inicio != '0':
+    opcoes = ['Pedra', 'Papel', 'Tesoura']
+    print(f"Dadas as opções: 1 - {opcoes[0]}. 2 - {opcoes[1]} e 3 - {opcoes[2]}.\nEscolha a sua:")
+    escolhaUsuario = tratarEscolha()
+    escolhaComputador = randint(0,2)
+    pontosUsuario = 0
+    pontosComputador = 0
+    time.sleep(1)
+    print(f"{cores['magenta']}JO{cores['limpa']}")
+    time.sleep(1)
+    print(f"{cores['magenta']}KEN{cores['limpa']}")
+    time.sleep(1)
+    print(f"{cores['magenta']}PÔ{cores['limpa']}")
+    time.sleep(0.5)
+    vencedor = escolherVencedor(escolhaUsuario, escolhaComputador)
+    inicio = input("Digite qualquer coisa para continuar jogando (ou 0 para fechar)\n")
+    if inicio == '0':
+        print("Foi um prazer jogar com você!")
 
 
 
