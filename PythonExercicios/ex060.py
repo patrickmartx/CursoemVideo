@@ -2,9 +2,14 @@
 # Ex: 5! = 5x4x3x2x1 = 120
 
 numero = int(input("Escreva um número: "))
-fatorial = numero
+fatorial = 1
 count = numero
-while count != 1:
-    count -= 1
+print(f"CALCULANDO {numero}!")
+while count > 0:
+    print(f"{count}", end='')
+    print(" X " if count > 1 else " = ", end='')
     fatorial *= count
-print(f"O fatorial de {numero}! é {fatorial}.")
+    count -= 1
+
+
+print(f"{fatorial}.")
