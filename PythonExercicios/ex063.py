@@ -2,15 +2,16 @@
 def fibonacci(n):
     nAnterior = 0
     nProximo = 1
-    count = 0
-    print(nProximo, end=' ')
-    while count != n-1:
+    count = 2
+    print(f"{nAnterior} -> {nProximo}", end='')
+    while count != n:
         somaFib = nAnterior + nProximo
         nAnterior = nProximo
         nProximo = somaFib
         count += 1
-        print(somaFib, end=' ')
+        print(f" -> {somaFib}", end='')
 
 
 numero = int(input("Escreva um número: "))
 fibonacci(numero)
+print("\nFIM DO PROGRAMA.")
