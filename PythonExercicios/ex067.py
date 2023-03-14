@@ -14,3 +14,4 @@ while True:
     if valor < 0:
         break
     tabuada(valor)
+print("Programa encerrado. VOLTE SEMPRE.")
