@@ -3,8 +3,8 @@ import random
 from time import sleep
 
 print("=-" * 10 + " TENTE ADIVINHAR O NÚMERO QUE ESTOU PENSANDO " + "-=" * 10)
-numeroComputador = random.randint(0, 5)
-numeroPessoa = int(input("Escreva um número de 0 a 5: "))
+numeroComputador = random.randint(0, 10)
+numeroPessoa = int(input("Escreva um número de 0 a 10: "))
 count = 1
 print("PROCESSANDO...")
 sleep(1)
