@@ -19,6 +19,6 @@ for i in range(0, len(lista)):
     else:
         impares.append(lista[i])
 
-print(lista)
-print(pares)
-print(impares)
+print(f"A lista completa é {lista}")
+print(f"A lista de pares é {pares}")
+print(f"A lista de ímpares é {impares}")
