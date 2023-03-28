@@ -26,5 +26,5 @@ print('-=' * 15)
 ranking = sorted(jogo.items(), key=itemgetter(1), reverse=True)
 for i, v in enumerate(ranking):
     sleep(0.5)
-    print(f"{i+1}º lugar: {v[0]} com {v[1]}")
+    print(formatacao, f"{i+1}º lugar: {v[0]} com {v[1]}")
 print('-=' * 15)
