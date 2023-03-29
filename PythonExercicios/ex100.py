@@ -15,13 +15,15 @@ def sorteia(lista):
     print("Sorteando 5 valores da lista: ", end='')
     for i in range(0, 5):
         lista.append(randint(0, 30))
-        # sleep(0.3)
+        sleep(0.3)
         print(lista[i], end=' ')
     print("PRONTO!")
     # return lista
-    soma(lista)
+    # soma(lista)
 
 
 numeros = []
-numeros = sorteia(numeros)
+sorteia(numeros)
+soma(numeros)
+#numeros = sorteia(numeros)
 # soma(numeros)
