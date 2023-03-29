@@ -14,7 +14,7 @@ def contagem(inicio, fim, passo):
         linha()
         print(f"Contagem de {passo} em {passo}")
         for i in range(inicio, fim + 1, passo):
-            #sleep(0.3)
+            sleep(0.3)
             print(f"{i} ", end='')
         print("FIM!")
     else:
@@ -22,7 +22,7 @@ def contagem(inicio, fim, passo):
             linha()
             print(f"Contagem de {passo*-1} em {passo*-1}")
             for i in range(inicio, fim - 1, passo):
-                # sleep(0.3)
+                sleep(0.3)
                 print(f"{i} ", end='')
             print("FIM!")
 
@@ -31,8 +31,8 @@ def contagem(inicio, fim, passo):
             linha()
             print(f"Contagem de {passo*-1} em {passo*-1}")
             for i in range(inicio, fim-1, passo):
-                #sleep(0.3)
-                print(f"{i} ", end='')
+                print(f"{i} ", end='', flush=True)
+                sleep(0.3)
             print("FIM!")
 
 
