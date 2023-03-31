@@ -1,19 +1,19 @@
-def metade(num, v=False):
+def metade(num=0, v=False):
     return num / 2 if v is False else moeda(num / 2)
 
 
-def dobro(num, v=False):
+def dobro(num=0, v=False):
     return num * 2 if not v else moeda(num * 2)
 
 
-def aumentar(num, per, v=False):
+def aumentar(num=0, per=0, v=False):
     if v:
         return moeda(num + (num * (per / 100)))
     else:
         return num + (num * (per / 100))
 
 
-def diminuir(num, per, v=False):
+def diminuir(num=0, per=0, v=False):
     if v:
         return moeda(num - (num * (per / 100)))
     else:
