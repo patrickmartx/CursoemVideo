@@ -5,3 +5,11 @@ def leiaDinheiro(txt):
         valor = input(txt).replace(',', '.').strip()
     return float(valor)
 
+
+def leiaInt(txt):
+    num = input(txt)
+    while not num.isnumeric():
+        print("\033[1:31mERRO! Digite um número inteiro válido.\033[m")
+        num = input(txt)
+    return int(num)
+
