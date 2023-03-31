@@ -25,12 +25,12 @@ def moeda(num=0):
 
 
 def resumo(num=0, aum=0, dim=0):
-    print('-' * 30)
-    print(f"{'RESUMO DO VALOR':^30}")
-    print('-' * 30)
-    print(f"Preço analisado: \t{moeda(num)}")
-    print(f"Dobro do preço: \t{dobro(num, True)}")
-    print(f"Metade do preço: \t{metade(num, True)}")
-    print(f"{aum}% de aumento: \t{aumentar(num, aum, True):}")
-    print(f"{dim}% de redução: \t{diminuir(num, dim, True)}")
-    print('-' * 30)
+    print('-' * 32)
+    print(f"{'RESUMO DO VALOR':^32}")
+    print('-' * 32)
+    print(f"{'Preço analisado:':<20} \t{moeda(num)}")
+    print(f"{'Dobro do preço:':<20} \t{dobro(num, True)}")
+    print(f"{'Metade do preço:':<20} {metade(num, True)}")
+    print(f"{f'{aum}% de aumento:':<20} {aumentar(num, aum, True):}")
+    print(f"{f'{dim}% de redução:':<20} {diminuir(num, dim, True)}")
+    print('-' * 32)
