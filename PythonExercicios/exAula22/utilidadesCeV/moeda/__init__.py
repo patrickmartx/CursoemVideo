@@ -20,11 +20,11 @@ def diminuir(num=0, per=0, v=False):
         return num - (num * (per / 100))
 
 
-def moeda(num):
+def moeda(num=0):
     return f"R${num:.2f}"
 
 
-def resumo(num, aum, dim):
+def resumo(num=0, aum=0, dim=0):
     print('-' * 32)
     print(f"{'RESUMO DO VALOR':^32}")
     print('-' * 32)
