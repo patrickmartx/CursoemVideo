@@ -5,7 +5,7 @@ def imprimir(txt, n=0):
          '\033[0;33m',  # 3 - amarelo
          '\033[0;34m',  # 4 - azul
          '\033[0;35m',  # 5 - roxo
-         '\033[0;36m'  # 6 - branco
+         '\033[0;36m'   # 6 - branco
          )
     return print(f"{c[n]}{txt}{c[0]}")
 
