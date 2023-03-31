@@ -3,10 +3,7 @@ def metade(num, v=False):
 
 
 def dobro(num, v=False):
-    if v:
-        return moeda(num * 2)
-    else:
-        return num * 2
+    return num * 2 if not v else moeda(num * 2)
 
 
 def aumentar(num, per, v=False):
