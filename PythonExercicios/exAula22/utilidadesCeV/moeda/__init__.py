@@ -1,8 +1,5 @@
 def metade(num, v=False):
-    if v:
-        return moeda(num / 2)
-    else:
-        return num / 2
+    return num / 2 if v is False else moeda(num / 2)
 
 
 def dobro(num, v=False):
