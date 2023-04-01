@@ -10,3 +10,4 @@ except Exception as erro:
     imprimir(f'O site não está acessível no momento, erro {erro.__class__}', 3)
 else:
     imprimir('Consegui abrir o site com sucesso!', 2)
+    # print(site.read())
